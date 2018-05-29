@@ -1,0 +1,73 @@
+<%= form_for(@tag) do |f| %>
+  <% if @tag.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tag.errors.count, "error") %> prohibited this tag from being saved:</h2>
+
+      <ul>
+      <% @tag.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :codicetelecomando %><br>
+    <%= f.text_field :codicetelecomando %>
+  </div>
+  <div class="field">
+    <%= f.label :nome %><br>
+    <%= f.text_field :nome %>
+  </div>
+  <div class="field">
+    <%= f.label :cognome %><br>
+    <%= f.text_field :cognome %>
+  </div>
+  <div class="field">
+    <%= f.label :seggnatario %><br>
+    <%= f.text_field :seggnatario %>
+  </div>
+  <div class="field">
+    <%= f.label :data %><br>
+    <%= f.datetime_select :data %>
+  </div>
+  <div class="field">
+    <%= f.label :serial_number %><br>
+    <%= f.text_field :serial_number %>
+  </div>
+  <div class="field">
+    <%= f.label :internal_sn %><br>
+    <%= f.text_field :internal_sn %>
+  </div>
+  <div class="field">
+    <%= f.label :data_setup_agg_firmware %><br>
+    <%= f.datetime_select :data_setup_agg_firmware %>
+  </div>
+  <div class="field">
+    <%= f.label :data_attivazione %><br>
+    <%= f.datetime_select :data_attivazione %>
+  </div>
+  <div class="field">
+    <%= f.label :data_disattivazione %><br>
+    <%= f.datetime_select :data_disattivazione %>
+  </div>
+  <div class="field">
+    <%= f.label :stato %><br>
+    <%= f.text_field :stato %>
+  </div>
+  <div class="field">
+    <%= f.label :data_sostituzione %><br>
+    <%= f.datetime_select :data_sostituzione %>
+  </div>
+  <div class="field">
+    <%= f.label :sostituto_da %><br>
+    <%= f.text_field :sostituto_da %>
+  </div>
+  <div class="field">
+    <%= f.label :note %><br>
+    <%= f.text_area :note %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

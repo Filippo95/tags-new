@@ -1,0 +1,61 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  data: MyString
+  ora: MyString
+  direzione: MyString
+  codice_utente: MyString
+  controlli: MyString
+  esito: MyString
+  sorgente: MyString
+  edizione: MyString
+  varco: MyString
+  tracciato_tessera: MyString
+  slave_id: MyString
+  lettore: MyString
+  tipo: MyString
+  fullcode: MyText
+  term_id: MyString
+  mac: MyString
+  localip: MyString
+  dhcp: MyString
+  date: MyString
+  time: MyString
+  localtransaction: MyString
+  io: MyString
+  iox: MyString
+  gate_state: MyString
+  gate_state_ex: MyString
+  slave_state_ex: MyString
+  batt: MyString
+  batt_mv: MyString
+
+two:
+  data: MyString
+  ora: MyString
+  direzione: MyString
+  codice_utente: MyString
+  controlli: MyString
+  esito: MyString
+  sorgente: MyString
+  edizione: MyString
+  varco: MyString
+  tracciato_tessera: MyString
+  slave_id: MyString
+  lettore: MyString
+  tipo: MyString
+  fullcode: MyText
+  term_id: MyString
+  mac: MyString
+  localip: MyString
+  dhcp: MyString
+  date: MyString
+  time: MyString
+  localtransaction: MyString
+  io: MyString
+  iox: MyString
+  gate_state: MyString
+  gate_state_ex: MyString
+  slave_state_ex: MyString
+  batt: MyString
+  batt_mv: MyString

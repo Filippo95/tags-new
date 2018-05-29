@@ -1,0 +1,144 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Data:</strong>
+  <%= @transaction.data %>
+</p>
+
+<p>
+  <strong>Ora:</strong>
+  <%= @transaction.ora %>
+</p>
+
+<p>
+  <strong>Direzione:</strong>
+  <%= @transaction.direzione %>
+</p>
+
+<p>
+  <strong>Codice utente:</strong>
+  <%= @transaction.codice_utente %>
+</p>
+
+<p>
+  <strong>Controlli:</strong>
+  <%= @transaction.controlli %>
+</p>
+
+<p>
+  <strong>Esito:</strong>
+  <%= @transaction.esito %>
+</p>
+
+<p>
+  <strong>Sorgente:</strong>
+  <%= @transaction.sorgente %>
+</p>
+
+<p>
+  <strong>Edizione:</strong>
+  <%= @transaction.edizione %>
+</p>
+
+<p>
+  <strong>Varco:</strong>
+  <%= @transaction.varco %>
+</p>
+
+<p>
+  <strong>Tracciato tessera:</strong>
+  <%= @transaction.tracciato_tessera %>
+</p>
+
+<p>
+  <strong>Slave:</strong>
+  <%= @transaction.slave_id %>
+</p>
+
+<p>
+  <strong>Lettore:</strong>
+  <%= @transaction.lettore %>
+</p>
+
+<p>
+  <strong>Tipo:</strong>
+  <%= @transaction.tipo %>
+</p>
+
+<p>
+  <strong>Fullcode:</strong>
+  <%= @transaction.fullcode %>
+</p>
+
+<p>
+  <strong>Term:</strong>
+  <%= @transaction.term_id %>
+</p>
+
+<p>
+  <strong>Mac:</strong>
+  <%= @transaction.mac %>
+</p>
+
+<p>
+  <strong>Localip:</strong>
+  <%= @transaction.localip %>
+</p>
+
+<p>
+  <strong>Dhcp:</strong>
+  <%= @transaction.dhcp %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @transaction.date %>
+</p>
+
+<p>
+  <strong>Time:</strong>
+  <%= @transaction.time %>
+</p>
+
+<p>
+  <strong>Localtransaction:</strong>
+  <%= @transaction.localtransaction %>
+</p>
+
+<p>
+  <strong>Io:</strong>
+  <%= @transaction.io %>
+</p>
+
+<p>
+  <strong>Iox:</strong>
+  <%= @transaction.iox %>
+</p>
+
+<p>
+  <strong>Gate state:</strong>
+  <%= @transaction.gate_state %>
+</p>
+
+<p>
+  <strong>Gate state ex:</strong>
+  <%= @transaction.gate_state_ex %>
+</p>
+
+<p>
+  <strong>Slave state ex:</strong>
+  <%= @transaction.slave_state_ex %>
+</p>
+
+<p>
+  <strong>Batt:</strong>
+  <%= @transaction.batt %>
+</p>
+
+<p>
+  <strong>Batt mv:</strong>
+  <%= @transaction.batt_mv %>
+</p>
+
+<%= link_to 'Edit', edit_transaction_path(@transaction) %> |
+<%= link_to 'Back', transactions_path %>

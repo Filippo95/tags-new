@@ -1,0 +1,81 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Transactions</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Data</th>
+      <th>Ora</th>
+      <th>Direzione</th>
+      <th>Codice utente</th>
+      <th>Controlli</th>
+      <th>Esito</th>
+      <th>Sorgente</th>
+      <th>Edizione</th>
+      <th>Varco</th>
+      <th>Tracciato tessera</th>
+      <th>Slave</th>
+      <th>Lettore</th>
+      <th>Tipo</th>
+      <th>Fullcode</th>
+      <th>Term</th>
+      <th>Mac</th>
+      <th>Localip</th>
+      <th>Dhcp</th>
+      <th>Date</th>
+      <th>Time</th>
+      <th>Localtransaction</th>
+      <th>Io</th>
+      <th>Iox</th>
+      <th>Gate state</th>
+      <th>Gate state ex</th>
+      <th>Slave state ex</th>
+      <th>Batt</th>
+      <th>Batt mv</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @transactions.each do |transaction| %>
+      <tr>
+        <td><%= transaction.data %></td>
+        <td><%= transaction.ora %></td>
+        <td><%= transaction.direzione %></td>
+        <td><%= transaction.codice_utente %></td>
+        <td><%= transaction.controlli %></td>
+        <td><%= transaction.esito %></td>
+        <td><%= transaction.sorgente %></td>
+        <td><%= transaction.edizione %></td>
+        <td><%= transaction.varco %></td>
+        <td><%= transaction.tracciato_tessera %></td>
+        <td><%= transaction.slave_id %></td>
+        <td><%= transaction.lettore %></td>
+        <td><%= transaction.tipo %></td>
+        <td><%= transaction.fullcode %></td>
+        <td><%= transaction.term_id %></td>
+        <td><%= transaction.mac %></td>
+        <td><%= transaction.localip %></td>
+        <td><%= transaction.dhcp %></td>
+        <td><%= transaction.date %></td>
+        <td><%= transaction.time %></td>
+        <td><%= transaction.localtransaction %></td>
+        <td><%= transaction.io %></td>
+        <td><%= transaction.iox %></td>
+        <td><%= transaction.gate_state %></td>
+        <td><%= transaction.gate_state_ex %></td>
+        <td><%= transaction.slave_state_ex %></td>
+        <td><%= transaction.batt %></td>
+        <td><%= transaction.batt_mv %></td>
+        <td><%= link_to 'Show', transaction %></td>
+        <td><%= link_to 'Edit', edit_transaction_path(transaction) %></td>
+        <td><%= link_to 'Destroy', transaction, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Transaction', new_transaction_path %>

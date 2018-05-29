@@ -1,0 +1,74 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Codicetelecomando:</strong>
+  <%= @tag.codicetelecomando %>
+</p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @tag.nome %>
+</p>
+
+<p>
+  <strong>Cognome:</strong>
+  <%= @tag.cognome %>
+</p>
+
+<p>
+  <strong>Seggnatario:</strong>
+  <%= @tag.seggnatario %>
+</p>
+
+<p>
+  <strong>Data:</strong>
+  <%= @tag.data %>
+</p>
+
+<p>
+  <strong>Serial number:</strong>
+  <%= @tag.serial_number %>
+</p>
+
+<p>
+  <strong>Internal sn:</strong>
+  <%= @tag.internal_sn %>
+</p>
+
+<p>
+  <strong>Data setup agg firmware:</strong>
+  <%= @tag.data_setup_agg_firmware %>
+</p>
+
+<p>
+  <strong>Data attivazione:</strong>
+  <%= @tag.data_attivazione %>
+</p>
+
+<p>
+  <strong>Data disattivazione:</strong>
+  <%= @tag.data_disattivazione %>
+</p>
+
+<p>
+  <strong>Stato:</strong>
+  <%= @tag.stato %>
+</p>
+
+<p>
+  <strong>Data sostituzione:</strong>
+  <%= @tag.data_sostituzione %>
+</p>
+
+<p>
+  <strong>Sostituto da:</strong>
+  <%= @tag.sostituto_da %>
+</p>
+
+<p>
+  <strong>Note:</strong>
+  <%= @tag.note %>
+</p>
+
+<%= link_to 'Edit', edit_tag_path(@tag) %> |
+<%= link_to 'Back', tags_path %>

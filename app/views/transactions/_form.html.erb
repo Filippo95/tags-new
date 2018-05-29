@@ -1,0 +1,129 @@
+<%= form_for(@transaction) do |f| %>
+  <% if @transaction.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@transaction.errors.count, "error") %> prohibited this transaction from being saved:</h2>
+
+      <ul>
+      <% @transaction.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :data %><br>
+    <%= f.text_field :data %>
+  </div>
+  <div class="field">
+    <%= f.label :ora %><br>
+    <%= f.text_field :ora %>
+  </div>
+  <div class="field">
+    <%= f.label :direzione %><br>
+    <%= f.text_field :direzione %>
+  </div>
+  <div class="field">
+    <%= f.label :codice_utente %><br>
+    <%= f.text_field :codice_utente %>
+  </div>
+  <div class="field">
+    <%= f.label :controlli %><br>
+    <%= f.text_field :controlli %>
+  </div>
+  <div class="field">
+    <%= f.label :esito %><br>
+    <%= f.text_field :esito %>
+  </div>
+  <div class="field">
+    <%= f.label :sorgente %><br>
+    <%= f.text_field :sorgente %>
+  </div>
+  <div class="field">
+    <%= f.label :edizione %><br>
+    <%= f.text_field :edizione %>
+  </div>
+  <div class="field">
+    <%= f.label :varco %><br>
+    <%= f.text_field :varco %>
+  </div>
+  <div class="field">
+    <%= f.label :tracciato_tessera %><br>
+    <%= f.text_field :tracciato_tessera %>
+  </div>
+  <div class="field">
+    <%= f.label :slave_id %><br>
+    <%= f.text_field :slave_id %>
+  </div>
+  <div class="field">
+    <%= f.label :lettore %><br>
+    <%= f.text_field :lettore %>
+  </div>
+  <div class="field">
+    <%= f.label :tipo %><br>
+    <%= f.text_field :tipo %>
+  </div>
+  <div class="field">
+    <%= f.label :fullcode %><br>
+    <%= f.text_area :fullcode %>
+  </div>
+  <div class="field">
+    <%= f.label :term_id %><br>
+    <%= f.text_field :term_id %>
+  </div>
+  <div class="field">
+    <%= f.label :mac %><br>
+    <%= f.text_field :mac %>
+  </div>
+  <div class="field">
+    <%= f.label :localip %><br>
+    <%= f.text_field :localip %>
+  </div>
+  <div class="field">
+    <%= f.label :dhcp %><br>
+    <%= f.text_field :dhcp %>
+  </div>
+  <div class="field">
+    <%= f.label :date %><br>
+    <%= f.text_field :date %>
+  </div>
+  <div class="field">
+    <%= f.label :time %><br>
+    <%= f.text_field :time %>
+  </div>
+  <div class="field">
+    <%= f.label :localtransaction %><br>
+    <%= f.text_field :localtransaction %>
+  </div>
+  <div class="field">
+    <%= f.label :io %><br>
+    <%= f.text_field :io %>
+  </div>
+  <div class="field">
+    <%= f.label :iox %><br>
+    <%= f.text_field :iox %>
+  </div>
+  <div class="field">
+    <%= f.label :gate_state %><br>
+    <%= f.text_field :gate_state %>
+  </div>
+  <div class="field">
+    <%= f.label :gate_state_ex %><br>
+    <%= f.text_field :gate_state_ex %>
+  </div>
+  <div class="field">
+    <%= f.label :slave_state_ex %><br>
+    <%= f.text_field :slave_state_ex %>
+  </div>
+  <div class="field">
+    <%= f.label :batt %><br>
+    <%= f.text_field :batt %>
+  </div>
+  <div class="field">
+    <%= f.label :batt_mv %><br>
+    <%= f.text_field :batt_mv %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
