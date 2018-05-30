@@ -67,7 +67,7 @@ class WebServiceController < ApplicationController
     end
     if @transaction.save
       respond_to do |format| 
-         format.html { render  plain: "save=0\n" }
+         format.html { render  plain: "save=0\nack=1" }
       end
     else
       respond_to do |format|
