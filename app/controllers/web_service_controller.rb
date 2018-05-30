@@ -4,19 +4,19 @@ class WebServiceController < ApplicationController
     params.each do |key,value|
       Rails.logger.warn "Param #{key}: #{value}"
       if key=="tr_data"
-        @transaction.data=value.split(",").first
-        @transaction.ora=value.split(",").second
-        @transaction.direzione=value.split(",").third
-        @transaction.codice_utente=value.split(",").fifth
+        @transaction.data=value.split(",")[0]
+        @transaction.ora=value.split(",")[1]
+        @transaction.direzione=value.split(",")[2]
+        @transaction.codice_utente=value.split(",")[4]
         @transaction.controlli=value.split(",")[5]
         @transaction.esito=value.split(",")[6]
         @transaction.sorgente=value.split(",")[7]
         @transaction.edizione=value.split(",")[8]
         @transaction.varco=value.split(",")[9]
-        @transaction.tracciato_tessera=value.split(",")[12]
-        @transaction.slave_id=value.split(",")[13]
-        @transaction.lettore=value.split(",")[14]
-        @transaction.tipo=value.split(",")[15]
+        @transaction.tracciato_tessera=value.split(",")[10]
+        @transaction.slave_id=value.split(",")[11]
+        @transaction.lettore=value.split(",")[12]
+        @transaction.tipo=value.split(",")[13]
       end
       if key=="fullcode"
         @transaction.fullcode=value

@@ -14,55 +14,55 @@
 ActiveRecord::Schema.define(version: 20180518124113) do
 
   create_table "tags", force: :cascade do |t|
-    t.string   "codicetelecomando"
-    t.string   "nome"
-    t.string   "cognome"
-    t.string   "seggnatario"
+    t.string   "codicetelecomando",       limit: 255
+    t.string   "nome",                    limit: 255
+    t.string   "cognome",                 limit: 255
+    t.string   "seggnatario",             limit: 255
     t.datetime "data"
-    t.string   "serial_number"
-    t.string   "internal_sn"
+    t.string   "serial_number",           limit: 255
+    t.string   "internal_sn",             limit: 255
     t.datetime "data_setup_agg_firmware"
     t.datetime "data_attivazione"
     t.datetime "data_disattivazione"
-    t.string   "stato"
+    t.string   "stato",                   limit: 255
     t.datetime "data_sostituzione"
-    t.string   "sostituto_da"
-    t.text     "note"
-    t.datetime "created_at",              null: false
-    t.datetime "updated_at",              null: false
+    t.string   "sostituto_da",            limit: 255
+    t.text     "note",                    limit: 65535
+    t.datetime "created_at",                            null: false
+    t.datetime "updated_at",                            null: false
   end
 
   create_table "transactions", force: :cascade do |t|
-    t.string   "data"
-    t.string   "ora"
-    t.string   "direzione"
-    t.string   "codice_utente"
-    t.string   "controlli"
-    t.string   "esito"
-    t.string   "sorgente"
-    t.string   "edizione"
-    t.string   "varco"
-    t.string   "tracciato_tessera"
-    t.string   "slave_id"
-    t.string   "lettore"
-    t.string   "tipo"
-    t.text     "fullcode"
-    t.string   "term_id"
-    t.string   "mac"
-    t.string   "localip"
-    t.string   "dhcp"
-    t.string   "date"
-    t.string   "time"
-    t.string   "localtransaction"
-    t.string   "io"
-    t.string   "iox"
-    t.string   "gate_state"
-    t.string   "gate_state_ex"
-    t.string   "slave_state_ex"
-    t.string   "batt"
-    t.string   "batt_mv"
-    t.datetime "created_at",        null: false
-    t.datetime "updated_at",        null: false
+    t.string   "data",              limit: 255
+    t.string   "ora",               limit: 255
+    t.string   "direzione",         limit: 255
+    t.string   "codice_utente",     limit: 255
+    t.string   "controlli",         limit: 255
+    t.string   "esito",             limit: 255
+    t.string   "sorgente",          limit: 255
+    t.string   "edizione",          limit: 255
+    t.string   "varco",             limit: 255
+    t.string   "tracciato_tessera", limit: 255
+    t.string   "slave_id",          limit: 255
+    t.string   "lettore",           limit: 255
+    t.string   "tipo",              limit: 255
+    t.text     "fullcode",          limit: 65535
+    t.string   "term_id",           limit: 255
+    t.string   "mac",               limit: 255
+    t.string   "localip",           limit: 255
+    t.string   "dhcp",              limit: 255
+    t.string   "date",              limit: 255
+    t.string   "time",              limit: 255
+    t.string   "localtransaction",  limit: 255
+    t.string   "io",                limit: 255
+    t.string   "iox",               limit: 255
+    t.string   "gate_state",        limit: 255
+    t.string   "gate_state_ex",     limit: 255
+    t.string   "slave_state_ex",    limit: 255
+    t.string   "batt",              limit: 255
+    t.string   "batt_mv",           limit: 255
+    t.datetime "created_at",                      null: false
+    t.datetime "updated_at",                      null: false
   end
 
 end
