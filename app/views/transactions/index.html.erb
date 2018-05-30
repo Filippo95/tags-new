@@ -5,8 +5,7 @@
 <table class="table" id="table">
   <thead>
     <tr>
-      <th>Data</th>
-      <th>Ora</th>
+      <th>Data-Ora</th>
       <th>Codice utente</th>
       <th>Controlli</th>
       <th>Esito</th>
@@ -23,9 +22,8 @@
   <tbody>
     <% @transactions.each do |transaction| %>
       <tr>
-        <td><%= transaction.data %></td>
-        <td><%= transaction.ora %></td>
-        <td><%= transaction.codice_utente %></td>
+        <td><%= transaction.data[6] %><%= transaction.data[7] %>/<%= transaction.data[4] %><%= transaction.data[5] %>/<%= transaction.data[0] %><%= transaction.data[1] %><%= transaction.data[2] %><%= transaction.data[3] %> - <%= transaction.ora[0] %><%= transaction.ora[1] %>:<%= transaction.ora[2] %><%= transaction.ora[3] %>:<%= transaction.ora[4] %><%= transaction.ora[5] %></td>
+        <td><%= @tags.where(" internal_sn= #{transaction.codice_utente}" ).first.codicetelecomando %></td>
         <td><%= transaction.controlli %></td>
         <td><%= transaction.esito %></td>
         <td><%= transaction.sorgente %></td>

@@ -5,11 +5,14 @@ class TransactionsController < ApplicationController
   # GET /transactions.json
   def index
     @transactions = Transaction.all
+    
+    @tags=Tag.where("id<?",100000000000)
   end
 
   # GET /transactions/1
   # GET /transactions/1.json
   def show
+    @tags=Tags.where("id<?",10000000000)
   end
 
   # GET /transactions/new
